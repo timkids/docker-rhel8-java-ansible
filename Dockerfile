@@ -2,8 +2,6 @@ FROM registry.access.redhat.com/ubi8/ubi-init
 
 LABEL maintainer="timkids"
 
-ENV DEBIAN_FRONTEND noninteractive
-
 RUN yum --disableplugin=subscription-manager update -y; \
     yum --disableplugin=subscription-manager -y install systemd systemd-sysv; \
     yum --disableplugin=subscription-manager install -y java-11-openjdk; \
