@@ -21,7 +21,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     capabilities:
       - SYS_ADMIN
-    command: "/lib/systemd/systemd"
+    command: "/usr/sbin/init"
     pre_build_image: true
 ```
 
